@@ -20,6 +20,7 @@
 #   include <utils/avx2.cpp>
 #   include "avx2-strstr.cpp"
 #   include "avx2-strstr-v2.cpp"
+#   include "avx2-strstr-v3.cpp"
 #   include "avx2-naive-strstr.cpp"
 #   include "avx2-naive-strstr64.cpp"
 #   include "avx2-naive-unrolled-strstr.cpp"
@@ -39,4 +40,3 @@
 #ifdef HAVE_AARCH64_ARCHITECTURE
 #   include "aarch64-strstr-v2.cpp"
 #endif
-

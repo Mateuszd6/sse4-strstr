@@ -90,6 +90,8 @@ Procedures all_procedures() {
 #ifdef HAVE_AVX2_INSTRUCTIONS
     REGISTER('k', "AVX2 (MPSADBW)", avx2_strstr);
     REGISTER('l', "AVX2 (generic)", avx2_strstr_v2);
+    REGISTER('x', "AVX2 (alt)", avx2_strstr_v3);
+
     REGISTER('m', "AVX2 (naive)", avx2_naive_strstr);
     REGISTER('n', "AVX2 (naive unrolled)", avx2_naive_unrolled_strstr);
     REGISTER('o', "AVX2-wide (naive)", avx2_naive_strstr64);

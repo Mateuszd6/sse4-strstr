@@ -202,6 +202,16 @@ public:
             measure(find, 'l');
         }
 
+        if (is_enabled('x')) {
+
+            auto find = [](const std::string& s, const std::string& neddle) -> size_t {
+
+                return avx2_strstr_v3(s, neddle);
+            };
+
+            measure(find, 'x');
+        }
+
         if (is_enabled('m')) {
 
             auto find = [](const std::string& s, const std::string& neddle) -> size_t {
